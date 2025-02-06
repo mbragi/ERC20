@@ -93,7 +93,7 @@ contract ERC20Token {
         emit Transfer(address(0), _to, _value);
     }
 
-    function balanceOfAddress(
+   function balanceOf(
         address account
     ) external view returns (uint256 balance) {
         return balances[account];
